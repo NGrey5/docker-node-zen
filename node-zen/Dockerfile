@@ -30,7 +30,7 @@ RUN tar -zxf /usr/local/zen-client.tar.gz --directory /usr/local
 RUN rm -rf /usr/local/zen-client.tar.gz
 
 
-FROM node:14-buster-slim
+FROM node:16-buster-slim
 # Update repos and install dependecies for odbc
 RUN apt-get update
 RUN apt-get install unixodbc unixodbc-dev -y
